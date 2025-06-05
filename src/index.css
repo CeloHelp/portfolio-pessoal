@@ -1,0 +1,119 @@
+
+@import "tailwindcss";
+
+/* ======================
+   🎨 Variáveis cósmicas
+====================== */
+@layer base {
+  :root {
+    --cosmic-bg: #0b0f2b;
+    --cosmic-accent: #4fd1c5;
+    --cosmic-text: #cbd5e1;
+    --cosmic-glow: rgba(79, 209, 197, 0.3);
+  }
+
+  body {
+    background-color: var(--cosmic-bg);
+    color: var(--cosmic-text);
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* ======================
+   ✨ Animações
+====================== */
+@keyframes cosmic-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes cosmic-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.float-soft {
+  animation: cosmic-float 6s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: cosmic-pulse 3s ease-in-out infinite;
+}
+
+/* ======================
+   🌌 Efeitos utilitários
+====================== */
+.glow-box {
+  box-shadow: 0 0 12px var(--cosmic-glow), 0 0 25px var(--cosmic-glow);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--cosmic-accent);
+  border-radius: 0.5rem;
+}
+
+.glow-text {
+  text-shadow: 0 0 8px var(--cosmic-accent);
+}
+
+@layer utilities {
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  .star {
+    background-color: white;
+    border-radius: 100%;
+    opacity: 0.8;
+    animation: blink 2s infinite ease-in-out;
+    box-shadow: 0 0 6px white;
+    width: 2px;
+    height: 2px;
+    position: absolute;
+  }
+}
+
+@keyframes glow-soft {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.05), 0 0 10px var(--cosmic-glow);
+  }
+  50% {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.08), 0 0 16px var(--cosmic-glow);
+  }
+}
+
+.animate-glow-soft {
+  animation: glow-soft 4s ease-in-out infinite;
+}
+
+
+@keyframes glow-soft {
+  0%, 100% {
+    text-shadow: 0 0 6px var(--cosmic-accent);
+  }
+  50% {
+    text-shadow: 0 0 12px var(--cosmic-accent);
+  }
+}
+
+.animate-glow-soft {
+  animation: glow-soft 2s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
