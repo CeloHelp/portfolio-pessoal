@@ -7,18 +7,18 @@ const projects = [
   {
     name: "Cardápio Digital",
     description:
-      "Sistema completo para restaurantes e lanchonetes com painel de controle, pedidos em tempo real e atualização automática de status.",
+      "API RESTful em Java com Spring Boot para gerenciamento de pedidos e produtos em restaurantes. O sistema permite cadastrar itens, categorias e acompanhar o status dos pedidos, com arquitetura em camadas e persistência em banco de dados relacional.",
     status: "Em andamento",
     link: "https://github.com/CeloHelp/cardapio-digital",
-    techs: ["Java", "Spring Boot", "MySQL", "React", "Tailwind CSS"],
+    techs: ["Java", "Spring Boot", "MySQL"]
   },
   {
     name: "Movimentação Financeira",
     description:
-      "Projeto finalizado que permite registrar entradas, saídas, visualizar saldo, gerar relatórios e organizar a gestão financeira pessoal ou empresarial.",
+      "Projeto finalizado que permite registrar entradas, saídas, visualizar saldo. Primeiro projeto realizado com o Padrão REST, me fornecendo uma base sólida em desenvolvimento de APIs.",
     status: "Finalizado",
     link: "https://github.com/CeloHelp/movimentacao-financeira",
-    techs: ["Java", "Spring Boot", "MySQL", "React"],
+    techs: ["Java", "Spring Boot"],
   },
 ];
 
@@ -29,7 +29,7 @@ const ProjectSection = () => {
       className="w-full max-w-6xl mx-auto px-6 py-20 z-10"
     >
       <h2 className="text-3xl sm:text-4xl font-bold glow-text text-center mb-10">
-        🚀 Projetos
+         Projetos
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -71,7 +71,7 @@ const ProjectSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block mt-4 text-sm font-medium text-[var(--cosmic-accent)] hover:underline"
-              title="Ver no GitHub"
+              title="Ver no Github"
             >
               <FaGithub size={20} />
             </a>

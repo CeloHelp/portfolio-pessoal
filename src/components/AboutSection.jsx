@@ -21,8 +21,7 @@ const AboutSection = () => {
           Sobre Mim
         </h2>
         <p className="text-lg leading-relaxed">
-          Olá! Me chamo Marcelo Henrique Pacobello e sou desenvolvedor com paixão por tecnologia e design.
-          Tenho experiência em desenvolvimento web, sempre buscando criar interfaces bonitas, funcionais e modernas.
+          Sou estudante de Análise e Desenvolvimento de Sistemas com foco em Back-End. Trabalho com Java, Spring Boot e bancos de dados relacionais. Tenho experiência com suporte técnico e desenvolvimento de APIs em projetos pessoais. Busco crescer como desenvolvedor e contribuir com soluções práticas e eficientes.
         </p>
 
         {/* Botões */}

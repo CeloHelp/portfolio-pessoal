@@ -9,12 +9,12 @@ const HeroSection = () => {
 
       {/* Título */}
       <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold glow-text animate-fade-in">
-        Transformando Ideias em Realidade Digital 🚀
+        Olá, sou Marcelo!
       </h1>
 
       {/* Subtítulo */}
       <p className="mt-6 text-lg sm:text-xl max-w-2xl text-[var(--cosmic-text)] animate-fade-in delay-200">
-        Sou um desenvolvedor apaixonado por criar experiências incríveis na web, com foco em performance, design e inovação intergaláctica.
+        Desenvolvedor Back-End em formação, apaixonado por criar APIs robustas e funcionais com Java e Spring Boot.
       </p>
 
       {/* Botão de ação */}
