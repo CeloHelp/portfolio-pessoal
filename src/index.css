@@ -1,5 +1,6 @@
-
 @import "tailwindcss";
+
+
 
 /* ======================
    🎨 Variáveis cósmicas
@@ -16,6 +17,7 @@
     background-color: var(--cosmic-bg);
     color: var(--cosmic-text);
     font-family: 'Inter', sans-serif;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -40,12 +42,38 @@
   }
 }
 
+@keyframes glow-box-soft {
+  0%, 100% {
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.05), 0 0 10px var(--cosmic-glow);
+  }
+  50% {
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.08), 0 0 16px var(--cosmic-glow);
+  }
+}
+
+@keyframes glow-text-soft {
+  0%, 100% {
+    text-shadow: 0 0 6px var(--cosmic-accent);
+  }
+  50% {
+    text-shadow: 0 0 12px var(--cosmic-accent);
+  }
+}
+
 .float-soft {
   animation: cosmic-float 6s ease-in-out infinite;
 }
 
 .pulse-glow {
   animation: cosmic-pulse 3s ease-in-out infinite;
+}
+
+.animate-glow-box {
+  animation: glow-box-soft 4s ease-in-out infinite;
+}
+
+.animate-glow-text {
+  animation: glow-text-soft 2s ease-in-out infinite;
 }
 
 /* ======================
@@ -84,36 +112,6 @@
   }
 }
 
-@keyframes glow-soft {
-  0%, 100% {
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.05), 0 0 10px var(--cosmic-glow);
-  }
-  50% {
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.08), 0 0 16px var(--cosmic-glow);
-  }
-}
-
-.animate-glow-soft {
-  animation: glow-soft 4s ease-in-out infinite;
-}
-
-
-@keyframes glow-soft {
-  0%, 100% {
-    text-shadow: 0 0 6px var(--cosmic-accent);
-  }
-  50% {
-    text-shadow: 0 0 12px var(--cosmic-accent);
-  }
-}
-
-.animate-glow-soft {
-  animation: glow-soft 2s ease-in-out infinite;
-}
-
 html {
   scroll-behavior: smooth;
 }
-
-
-
